@@ -1,0 +1,87 @@
+@import "tailwindcss";
+/* @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&family=Rubik:wght@400;500&display=swap'); */
+
+@layer base {
+    :root {
+
+        --color-bg: #FFFEFF;
+        /* Light background */
+        --color-text: #3B3437;
+        /* Light text */
+        --color-primary: #565759;
+        /* Light button */
+        --color-accent: #53594D;
+        /* Light accent */
+        --color-border: #DADADA;
+        /* Optional border */
+
+
+        /* Font variables */
+        --font-heading: 'Baloo 2', cursive;
+        --font-body: 'Rubik', sans-serif;
+    }
+
+    body {
+        font-family: var(--font-body);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: var(--font-heading);
+    }
+
+    html.dark {
+        --color-bg: #1D1F1F;
+        /* Dark background */
+        --color-text: #F3A424;
+        /* Dark text */
+        --color-primary: #7CA864;
+        /* Dark button */
+        --color-accent: #25C467;
+        /* Dark accent */
+        --color-border: #333333;
+        /* Optional border */
+    }
+}
+
+@layer utilities {
+    .font-heading {
+        font-family: var(--font-heading);
+    }
+
+    .font-body {
+        font-family: var(--font-body);
+    }
+
+    .bg-color-bg {
+        background-color: var(--color-bg);
+    }
+
+    .bg-color-primary {
+        background-color: var(--color-primary);
+    }
+
+    .bg-color-accent {
+        background-color: var(--color-accent);
+    }
+
+    .text-color-text {
+        color: var(--color-text);
+    }
+
+    .text-color-primary {
+        color: var(--color-primary);
+    }
+
+    .text-color-accent {
+        color: var(--color-accent);
+    }
+
+    .border-color-border {
+        border-color: var(--color-border);
+    }
+}
